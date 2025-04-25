@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evolutions</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="start">
+        <h1>merge js terminal</h1>
+        <input type="text" id="player-name" name="player-name" placeholder="who are you?"><br>
+        <label for="level">difficulty:</label><br>
+        <select name="level" id="level">
+            <option value="easy">easy(4x4)</option>
+            <option value="medium">medium(6x6)</option>
+            <option value="hard">hard(8x8)</option>
+        </select><br>
+        <button type="button" id="play">play</button>
+        <div id="start-modal" class="start-modal">
+            <div class="start-modalcontent">
+                <h2>attention!</h2>
+                <p>enter your name and choose a difficulty level</p>
+                <button id="start-modalclose">close</button>
+            </div>
+        </div>        
+    </div>
+
+    <div id="game">
+        <h1>web prog evolution</h1>
+        <div id="game-layout">
+            <div id="left-panel">
+                <div id="player-data">
+                    <p>name: <span id="name-info">---</span></p>
+                    <p>difficulty: <span id="level-info">---</span></p>
+                    <p>time: <span id="time">00:00</span></p>
+                    <p>score: <span id="score">0</span></p>
+                </div>
+                <div id="score-data">
+                    <h3>Evolution Progress</h3>
+                    <div id="evolution-scores"></div>
+                </div>
+            </div>
+            <div id="game-area">
+                <canvas id="gameboard" width="400" height="400"></canvas>
+                <div id="tooltip" class="tooltip"></div>
+            </div>
+        </div>
+        <div id="game-over-modal" class="game-over-modal">
+            <div class="game-over-content">
+                <h2>Game Over!</h2>
+                <div id="game-results">
+                    <p>Final Score: <span id="final-score">0</span></p>
+                    <p>Evolution Progress:</p>
+                    <div id="final-evolution-scores"></div>
+                </div>
+                <button id="restart-game">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="evolutions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
