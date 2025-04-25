@@ -1,7 +1,5 @@
 # Evolution-of-Web-Prog-Techs-Game
 Web Prog Evolutions is an educational puzzle game designed to help players understand the complex and fascinating history of web programming technologies. Through strategic merging and progression, players interactively explore how the web evolved from its early foundations to modern frameworks—and even into the future.
-
--> The Story of the Game
 The evolution of web technologies is intricate and ever-changing, making it a challenge to grasp. Web Prog Evolutions transforms this learning curve into a fun and engaging experience by turning historical milestones into a puzzle game.
 Players start with basic technologies and merge them to create more advanced tools. Each step teaches players about how different technologies emerged, evolved, and impacted the web development world.
 
