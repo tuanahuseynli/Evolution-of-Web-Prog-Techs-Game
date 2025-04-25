@@ -107,7 +107,7 @@ function showTooltip(item, x, y) {
         <div class="evolution-chain">
             ${evo.steps.map(step => `
                 <div class="evolution-step">
-                    <img src="media/logos/${step.img}" alt="${step.name}">
+                    <img src="logos/${step.img}" alt="${step.name}">
                     <span>${step.name}</span>
                 </div>
             `).join('')}
@@ -202,7 +202,7 @@ function redrawBoard() {
         const y = row * cellHeight;
 
         const img = new Image();
-        img.src = "media/logos/" + item.img;
+        img.src = "logos/" + item.img;
         img.onload = () => {
             ctx.clearRect(x, y, cellWidth, cellHeight);
             drawCell(row, col, cellWidth, cellHeight);
